@@ -1,12 +1,11 @@
 <% @events.each do |event| %>
   <li>
-    <strong><%= event.name %> - </strong>
-    in <%= event.location %> - <%= event.price%>
+    <strong><%= event.name %> - </strong> in <%= event.location %> - <%= price(event) %>
   </li>
   <p>
-    <%= event.description %>
+    <%= truncate(event.description, length: 35, separator: ' ') %>
   </p>
   <p>
-    <%= event.starts_at %>
+    <%= format_date(event) %>
   </p>
 <% end %>
