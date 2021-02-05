@@ -6,3 +6,6 @@
         <p><%= @event.description %></p>
     </div>
 </section>
+<section class="admin">
+  <%= link_to "Edit", event_edit_path(@event), class: "button" %>
+</section>
