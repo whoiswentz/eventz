@@ -1,34 +1,20 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Eventz</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+<head>
+  <title>Eventz</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
 
-  <body>
-    <header>
-      <nav>
-        <%= link_to image_tag("logo"), root_path %>
-        <ul>
-          <il>
-            <%= link_to "All Events", events_path %>
-          </il>
-        </ul>
-      </nav>
-    </header>
-    <div class="content">
-      <%= yield %>
-    </div>
-    <footer>
-    <p>
-      Copyright &copy; <%= Time.now.year %>
-      <%= link_to 'The Pragmatic Studio','https://pragmaticstudio.com' %>
-    </p>
-  </footer>
-  </body>
+<body>
+<%= render "layouts/header" %>
+<div class="content">
+  <%= yield %>
+</div>
+<%= render "layouts/footer" %>
+</body>
 </html>
