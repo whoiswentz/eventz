@@ -4,7 +4,7 @@
     <list default="true" id="933318ee-5395-4a73-9933-0116a15b3595" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/events_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/events_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/events/show.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/events/show.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/event.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/event.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,7 +165,8 @@
       <updated>1612316746776</updated>
       <workItem from="1612316748461" duration="399000" />
       <workItem from="1612486176828" duration="2651000" />
-      <workItem from="1612571447982" duration="3119000" />
+      <workItem from="1612571447982" duration="3657000" />
+      <workItem from="1612621453093" duration="181000" />
     </task>
     <servers />
   </component>
