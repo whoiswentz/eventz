@@ -1,12 +1,15 @@
 <section class="event-details">
-    <div class="details">
-        <h1><%= @event.name %></h1>
-        <h2><%= price(@event) %></h2>
-        <h3><%= format_date(@event) %> in <%= @event.location %></h3>
-        <p><%= @event.description %></p>
-    </div>
+  <div class="image">
+    <%= image_tag @event.image_file_name %>
+  </div>
+  <div class="details">
+    <h1><%= @event.name %></h1>
+    <h2><%= pluralize(@event.capacity, "spot") %> &bull; <%= price(@event) %></h2>
+    <h3><%= format_date(@event) %> in <%= @event.location %></h3>
+    <p><%= @event.description %></p>
+  </div>
 </section>
 <section class="admin">
   <%= link_to "Edit", edit_event_path(@event), class: "button" %>
-  <%= link_to "Delete", @event, method: :delete, class: "button", data: {confirm: "Really?"} %>
+  <%= link_to "Delete", @event, method: :delete, class: "button", data: { confirm: "Really?" } %>
 </section>
