@@ -13,11 +13,20 @@ class EventsController < ApplicationController
 
   def update
     @event = Event.find(params[:id])
-    redirect_to @event if @event.update(update_params)
+    redirect_to @event if @event.update(event_params)
+  end
+
+  def new
+    @event = Event.new
+  end
+
+  def create
+    @event = Event.new(event_params)
+    redirect_to @event if @event.save
   end
 
   private
-  def update_params
+  def event_params
     params.require(:event).permit(:name, :description, :location, :price, :starts_at)
   end
 end
