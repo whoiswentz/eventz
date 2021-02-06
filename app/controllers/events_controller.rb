@@ -1,4 +1,6 @@
 class EventsController < ApplicationController
+  add_flash_types(:danger)
+
   def index
     @events = Event.all
   end
@@ -35,7 +37,11 @@ class EventsController < ApplicationController
 
   def destroy
     @event = Event.find(params[:id])
-    redirect_to events_url if @event.destroy
+    if @event.destroy
+      redirect_to events_url, notice: "Event #{@event.name} destroyed"
+    else
+      redirect_to @event
+    end
   end
 
   private
