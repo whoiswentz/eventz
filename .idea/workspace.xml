@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="933318ee-5395-4a73-9933-0116a15b3595" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/views/registrations/new.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/registrations_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/registrations_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/helpers/registrations_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/registrations_helper.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/event.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/event.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/events/show.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/events/show.erb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -168,7 +168,7 @@
       <workItem from="1612486176828" duration="2651000" />
       <workItem from="1612571447982" duration="3657000" />
       <workItem from="1612621453093" duration="6828000" />
-      <workItem from="1612720749356" duration="2262000" />
+      <workItem from="1612720749356" duration="3296000" />
     </task>
     <servers />
   </component>
