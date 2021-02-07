@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   root 'events#index'
 
-  resources :events
-  resources :registrations
+  resources :events do
+    resources :registrations
+  end
 end
