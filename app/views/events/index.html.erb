@@ -1,9 +1,9 @@
 <ul>
   <% @events.each do |event| %>
     <li>
-      <%= event.name %>: <%= event.location %>, <%= number_to_currency(event.price, precision: 2) %>
+      <%= event.name %>: <%= event.location %>, <%= price(event) %>
     </li>
-    <p><%= event.description %></p>
-    <p><%= event.starts_at %></p>
+    <p><%= truncate(event.description, length: 35, separator: ' ') %></p>
+    <p><%= day_and_time(event) %></p>
   <% end %>
 </ul>
