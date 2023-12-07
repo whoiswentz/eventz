@@ -12,10 +12,12 @@
 
   <body>
     <header>
-      <h1>Eventz</h1>
+      <%= image_tag("logo.png") %>
     </header>
 
-    <%= yield %>
+    <div class="content">
+      <%= yield %>
+    </div>
 
     <footer>
       <a href="#">Created on Bla</a>
