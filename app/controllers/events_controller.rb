@@ -7,8 +7,11 @@ class EventsController < ApplicationController
 
   def create
     @event = Event.new(event_params)
-    @event.save
-    redirect_to @event
+    if @event.save
+      redirect_to @event
+    else
+      render :new, status: :unprocessable_entity
+    end
   end
 
   def index
@@ -22,8 +25,11 @@ class EventsController < ApplicationController
   end
 
   def update
-    @event.update(event_params)
-    redirect_to @event
+    if @event.update(event_params)
+      redirect_to @event
+    else
+      render :edit, status: :unprocessable_entity
+    end
   end
 
   def destroy
