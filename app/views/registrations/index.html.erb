@@ -1,0 +1,7 @@
+<h1>Registrations for <%= link_to @event.name, @event %></h1>
+
+<ul class="registrations">
+  <% @registrations.each do |registration| %>
+    <li><%= registration.name %> for <%= registration.event.name %></li>
+  <% end %>
+</ul>

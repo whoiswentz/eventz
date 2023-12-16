@@ -3,7 +3,7 @@ class Registration < ApplicationRecord
     'Newsletter',
     'Blog Post',
     'Twitter',
-    'Web Search'
+    'Web Search',
     'Friend/Coworker',
     'Other'
   ]
