@@ -2,6 +2,6 @@
 
 <ul class="registrations">
   <% @registrations.each do |registration| %>
-    <li><%= registration.name %> for <%= registration.event.name %></li>
+    <li><%= registration.name %> &bull; <%= registration.how_heard %></li>
   <% end %>
 </ul>
